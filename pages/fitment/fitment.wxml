@@ -1,0 +1,49 @@
+<!--index.wxml-->  
+<view class='container'>
+    <view class="left swiper-tab">  
+        <view class="swiper-tab-item" data-current="0" bindtap="switchNav">
+            <view class="small swiper-tab-list {{currentTab=='0' ? 'on' : '' }}" >
+              <text class="vertical">第一阶段</text>
+            </view>
+            <view class="big swiper-tab-list-right {{currentTab=='0' ? 'right-on': ''}}">
+            <text class="text-align-center">方案设计</text>
+            </view>
+        </view>
+        <view class="swiper-tab-item" data-current="1" bindtap="switchNav">
+            <view class="small swiper-tab-list {{currentTab=='1' ? 'on' : '' }}" >
+              <text class="vertical">第二阶段</text>
+            </view>
+            <view class="big swiper-tab-list-right {{currentTab=='1' ? 'right-on': ''}}">
+            <text class="text-align-center">前置订购</text>
+            </view>
+        </view>
+        <view class="swiper-tab-item"  data-current="2" bindtap="switchNav">
+            <view class="small swiper-tab-list {{currentTab=='2' ? 'on' : '' }}" >
+              <text class="vertical">第三阶段</text>
+            </view>
+            <view class="big swiper-tab-list-right {{currentTab=='2' ? 'right-on': ''}}">
+            <text class="text-align-center">装修施工</text>
+            </view>
+        </view>
+
+
+        <!--<view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">遨游</view>  -->
+        <!--<view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">关于</view>  -->
+    </view>  
+      
+    <swiper current="{{currentTab}}" class="right swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">  
+        <swiper-item>  
+          <view>
+              <text class="title-block">第一步：设计准备</text>
+          </view>  
+        </swiper-item>  
+        <!-- 我是呵呵 -->  
+        <swiper-item>  
+          <view>我是呵呵</view>  
+        </swiper-item>  
+        <!-- 我是嘿嘿 -->  
+        <swiper-item>  
+          <view>我是嘿嘿</view>  
+        </swiper-item>  
+    </swiper>
+</view>

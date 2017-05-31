@@ -1,0 +1,80 @@
+/**index.wxss**/  
+.swiper-tab{  
+    text-align: center;
+}
+.swiper-tab-item{
+    display: block;
+}
+.swiper-tab-list{  
+    color: #777777;
+    background-color: #c1c1c1;
+    border-left: #c1c1c1 5rpx solid;
+    border-bottom: #ffffff 2rpx dotted;
+    border-right: #ffffff 2rpx dotted;
+    float:left;
+    height: 180rpx;
+}
+.on{ 
+    color: #da7c0c;  
+    border-left: 5rpx solid #da7c0c;
+    background-color: #ffffff;
+}
+.swiper-tab-list-right{
+    font-size: 30rpx;
+    /*display: inline;*/
+    color: #777777;
+    background-color: #c1c1c1;
+    border-bottom: #ffffff 2rpx dotted;
+    float: left;
+    height: 180rpx;
+}
+.text-align-center{
+    text-align: center;
+    line-height: 180rpx;
+}
+.right-on{
+   color: #da7c0c;
+   background-color: #ffffff;
+}
+.small {
+    width: 30rpx;
+}
+.big {
+    width: 150rpx;
+}
+.vertical {
+  width: 30rpx;
+  font-size: 30rpx;
+  word-wrap: break-word;
+  letter-spacing: 20rpx;
+  word-break: break-all;
+}  
+
+.swiper-box{ 
+  display: block; 
+  height: 100%; 
+  width: 100%; 
+  overflow: hidden; 
+}  
+.swiper-box view{  
+    text-align: center;  
+}
+.left {
+  width: 200rpx;
+}
+.right {
+  width: 550rpx;
+}
+.container {
+  flex-direction: row;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0 0;
+  box-sizing: border-box;
+}
+
+.title-block {
+    font-size: 0.8em;
+}
