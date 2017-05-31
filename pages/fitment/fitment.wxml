@@ -33,8 +33,11 @@
       
     <swiper current="{{currentTab}}" class="right swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">  
         <swiper-item>  
-          <view>
+          <view class="view-block">
               <text class="title-block">第一步：设计准备</text>
+          </view>
+          <view class="view-block nav-item">
+              <navigator url="../detailpage/stageone/stageone" hover-class="navigator-hover">1.找设计师前的功课</navigator>
           </view>  
         </swiper-item>  
         <!-- 我是呵呵 -->  

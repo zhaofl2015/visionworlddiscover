@@ -1,0 +1,8 @@
+<!--pages/detailpage/stageone/stageone.wxml-->
+<view class="container">
+    <view>
+        <image src="../../resource/1.jpg" mode="aspectFit" class="img"></image>
+        <text class="title">装修前要初步统一全家人思想</text>
+    </view>
+
+</view>

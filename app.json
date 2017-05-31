@@ -3,7 +3,10 @@
     "pages/fitment/fitment",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/testpage/testpage"
+    "pages/testpage/testpage",
+    "pages/detailpage/stageone/stageonedetail/stageonedetail",
+    "pages/detailpage/stageone/stageone",
+    "pages/detailpage/detailpage"
   ],
   "window":{
     "backgroundTextStyle":"light",

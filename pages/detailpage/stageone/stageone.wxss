@@ -1,0 +1,12 @@
+/* pages/detailpage/stageone/stageone.wxss */
+
+.img {
+    width: 150rpx;
+    height: 150rpx;
+    background-color: #eeeeee;
+}
+
+.title {
+    text-align: center;
+    margin-top: 3em;
+}
