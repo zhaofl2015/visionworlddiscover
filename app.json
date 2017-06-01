@@ -1,11 +1,12 @@
 {
   "pages":[
     "pages/fitment/fitment",
+    "pages/detailpage/stageone/stageone",
     "pages/index/index",
     "pages/logs/logs",
     "pages/testpage/testpage",
     "pages/detailpage/stageone/stageonedetail/stageonedetail",
-    "pages/detailpage/stageone/stageone",
+
     "pages/detailpage/detailpage"
   ],
   "window":{

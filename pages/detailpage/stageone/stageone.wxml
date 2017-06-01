@@ -1,8 +1,21 @@
 <!--pages/detailpage/stageone/stageone.wxml-->
 <view class="container">
-    <view>
-        <image src="../../resource/1.jpg" mode="aspectFit" class="img"></image>
-        <text class="title">装修前要初步统一全家人思想</text>
+    <view wx:for="{{stage_list}}">
+        <navigator url="{{item.url}}">
+            <view class="list-item">
+                <image src="{{item.image_url}}" mode="aspectFit" class="img"></image>
+                <view class="text-container">
+                    <text class="text-container title">{{item.title}}</text>
+                    <text class="text-container brief">{{item.content}}</text>
+                </view>
+            </view>
+        </navigator>
     </view>
-
+    <!--<view class="list-item">
+        <image src="../../resource/1.jpg" mode="aspectFit" class="img"></image>
+        <view class="text-container">
+            <text class="text-container title">装修前要初步统一全家人思想</text>
+            <text class="text-container brief">有过装修经验的人，往往会说这样一句话：装修比买房还痛苦。这句话其实一点也不夸张，因为买房时，一般会初步确定一个大概位置，位置确定好之后，可选的余地也就不大了。但装</text>
+        </view>
+    </view>-->
 </view>

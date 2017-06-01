@@ -1,12 +1,20 @@
 <!--index.wxml-->  
 <view class='container'>
-    <view class="left swiper-tab">  
-        <view class="swiper-tab-item" data-current="0" bindtap="switchNav">
+    <view class="left swiper-tab" wx:for="{{nav_list}}" >  
+        <view class="swiper-tab-item" data-current="{{item.current_tab}}" bindtap="switchNav">
+            <view class="small swiper-tab-list {{currentTab==item.current_tab? 'on' : ''}}" >
+              <text class="vertical">{{item.title}}</text>
+            </view>
+            <view class="big swiper-tab-list-right {{currentTab==item.current_tab? 'right-on': ''}}">
+              <text class="text-align-center">{{item.name}}</text>
+            </view>
+        </view>
+        <!--<view class="swiper-tab-item" data-current="0" bindtap="switchNav">
             <view class="small swiper-tab-list {{currentTab=='0' ? 'on' : '' }}" >
               <text class="vertical">第一阶段</text>
             </view>
             <view class="big swiper-tab-list-right {{currentTab=='0' ? 'right-on': ''}}">
-            <text class="text-align-center">方案设计</text>
+              <text class="text-align-center">方案设计</text>
             </view>
         </view>
         <view class="swiper-tab-item" data-current="1" bindtap="switchNav">
@@ -24,29 +32,26 @@
             <view class="big swiper-tab-list-right {{currentTab=='2' ? 'right-on': ''}}">
             <text class="text-align-center">装修施工</text>
             </view>
-        </view>
+        </view>-->
 
-
-        <!--<view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">遨游</view>  -->
-        <!--<view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">关于</view>  -->
     </view>  
       
-    <swiper current="{{currentTab}}" class="right swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">  
-        <swiper-item>  
-          <view class="view-block">
-              <text class="title-block">第一步：设计准备</text>
+    <swiper current="{{currentTab}}" class="right swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange" wx:for="{{content_list}}">  
+        <swiper-item>
+          <view wx:for="{{item}}" wx:for-item="section">
+              <view class="title-block">{{section.title}}</view>
+              <view wx:for="{{section.steps}}" wx:for-item="step">
+                <navigator url="{{step.url}}" class="nav-item">{{step.title}}</navigator>
+              </view>
           </view>
-          <view class="view-block nav-item">
-              <navigator url="../detailpage/stageone/stageone" hover-class="navigator-hover">1.找设计师前的功课</navigator>
-          </view>  
-        </swiper-item>  
-        <!-- 我是呵呵 -->  
-        <swiper-item>  
+        </swiper-item>
+
+        <!--<swiper-item>  
           <view>我是呵呵</view>  
         </swiper-item>  
-        <!-- 我是嘿嘿 -->  
+
         <swiper-item>  
           <view>我是嘿嘿</view>  
-        </swiper-item>  
+        </swiper-item>  -->
     </swiper>
 </view>
