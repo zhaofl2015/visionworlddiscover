@@ -56,9 +56,9 @@
 }
 
 .right {
+  float: left;
   width: 550rpx;
   overflow-y: auto;
-  margin-left: 200rpx;
   height: 750rpx;
 }
 
