@@ -60,6 +60,146 @@ Page({
           "title": "第1步：设计准备",
           "steps": [
             {
+              "url": "../detailpage/stageone/stageone?page=1&index=1",
+              "title": "1、找设计师前的功课"
+            },
+            {
+              "url": "../detailpage/stageone/stageone?page=1&index=2",
+              "title": "2、确定装修方式"
+            }
+          ]
+        },
+        {
+          "title": "第2步：签署合同",
+          "steps": [
+            {
+              "url": "../detailpage/stageone/stageone?page=1&index=3",
+              "title": "1、签署设计合同"
+            },
+            {
+              "url": "../detailpage/stageone/stageone?page=1&index=4",
+              "title": "2、签署施工合同"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "第1步：设计准备",
+          "steps": [
+            {
+              "url": "../detailpage/stageone/stageone?page=2&index=1",
+              "title": "1、找设计师前的功课"
+            },
+            {
+              "url": "../detailpage/stageone/stageone?page=2&index=2",
+              "title": "2、确定装修方式"
+            }
+          ]
+        },
+        {
+          "title": "第2步：签署合同",
+          "steps": [
+            {
+              "url": "../detailpage/stageone/stageone?page=2&index=3",
+              "title": "1、签署设计合同"
+            },
+            {
+              "url": "../detailpage/stageone/stageone?page=1&index=4",
+              "title": "2、签署施工合同"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "第1步：设计准备",
+          "steps": [
+            {
+              "url": "",
+              "title": "1、找设计师前的功课"
+            },
+            {
+              "url": "",
+              "title": "2、确定装修方式"
+            }
+          ]
+        },
+        {
+          "title": "第2步：签署合同",
+          "steps": [
+            {
+              "url": "",
+              "title": "1、签署设计合同"
+            },
+            {
+              "url": "",
+              "title": "2、签署施工合同"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "第1步：设计准备",
+          "steps": [
+            {
+              "url": "",
+              "title": "1、找设计师前的功课"
+            },
+            {
+              "url": "",
+              "title": "2、确定装修方式"
+            }
+          ]
+        },
+        {
+          "title": "第2步：签署合同",
+          "steps": [
+            {
+              "url": "",
+              "title": "1、签署设计合同"
+            },
+            {
+              "url": "",
+              "title": "2、签署施工合同"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "第1步：设计准备",
+          "steps": [
+            {
+              "url": "",
+              "title": "1、找设计师前的功课"
+            },
+            {
+              "url": "",
+              "title": "2、确定装修方式"
+            }
+          ]
+        },
+        {
+          "title": "第2步：签署合同",
+          "steps": [
+            {
+              "url": "",
+              "title": "1、签署设计合同"
+            },
+            {
+              "url": "",
+              "title": "2、签署施工合同"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "第1步：设计准备",
+          "steps": [
+            {
               "url": "",
               "title": "1、找设计师前的功课"
             },
@@ -162,7 +302,6 @@ Page({
      * 滑动切换tab 
      */
   bindChange: function (e) {
-    console.log(e);
     var that = this;
     that.setData({ currentTab: e.detail.current });
 
@@ -171,7 +310,6 @@ Page({
    * 点击tab切换 
    */
   switchNav: function (e) {
-    console.log(e);
 
     var that = this;
 

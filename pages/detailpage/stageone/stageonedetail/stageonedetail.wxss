@@ -1,1 +1,21 @@
 /* pages/detailpage/stageone/stageonedetail/stageonedetail.wxss */
+
+.container {
+  display: block;
+  padding: 0 0;
+  width: 100%;
+  height: auto;
+}
+
+.title {
+  font: 1.2em bold;
+  float: left;
+  color:blue;
+  padding:0.8em;
+}
+
+.content{
+  float: left;
+  text-align: left;
+  padding: 0.3em;
+}

@@ -1,2 +1,5 @@
 <!--pages/detailpage/stageone/stageonedetail/stageonedetail.wxml-->
-<text>pages/detailpage/stageone/stageonedetail/stageonedetail.wxml</text>
+<view class='container'>
+  <view class="title">{{page_content.title}}</view>
+  <view class="content">{{page_content.content}}</view>
+</view>

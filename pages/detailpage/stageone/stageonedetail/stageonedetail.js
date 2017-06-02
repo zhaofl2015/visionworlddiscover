@@ -5,14 +5,35 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+      page_content: {
+        title:'',
+        content: ''
+      },
+      infos : {
+        1: {
+          1: {
+              title: '装修前要初步统一全家思想',
+              content: '有过装修经验的人<image url="../../../resource/1.jpg></image>"'
+          }
+        }
+      }
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+      var that = this;
+      var page = options.page;
+      var index = options.index;
+      var ret = {title: '', content: ''};
+      var infos = that.data.infos;
+      if((page in infos) && (index in infos[page])) {
+        ret = infos[page][index];
+        this.setData({
+          page_content: ret
+        });
+      }
   },
 
   /**

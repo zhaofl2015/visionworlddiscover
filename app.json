@@ -3,10 +3,10 @@
     "pages/fitment/fitment",
     "pages/detailpage/stageone/stageone",
     "pages/index/index",
+    "pages/testswiper/testswiper",
     "pages/logs/logs",
     "pages/testpage/testpage",
     "pages/detailpage/stageone/stageonedetail/stageonedetail",
-
     "pages/detailpage/detailpage"
   ],
   "window":{
