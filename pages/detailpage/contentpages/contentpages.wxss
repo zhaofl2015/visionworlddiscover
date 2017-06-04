@@ -1,0 +1,35 @@
+
+.container {
+   width: 95%;
+   height: 100%;
+   display: block;
+   margin: 100rpx 0 100rpx 0;
+}
+
+.header {
+  float: left;
+  width: 100%;
+  font: bold;
+  font-size: 1.5em;
+  text-align: left;
+  margin-bottom: 1em;
+}
+
+.content {
+  margin-left: 10rpx;
+  font-size: 0.8em;
+  width: 100%;
+}
+
+.image {
+  width: 100%;
+  margin: 100rpx 30rpx 100rpx 30rpx;
+}
+
+.para-header {
+  width: 100%;
+  text-align: left;
+  float: left;
+  font-style: bold;
+  margin: 50rpx 20rpx 50rpx 20rpx;
+}

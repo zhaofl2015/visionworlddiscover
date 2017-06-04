@@ -11,7 +11,7 @@ Page({
       1: {
         1: [
           {
-            "url": "./stageonedetail/stageonedetail?page=1&index=1",
+            "url": "../contentpages/page_1_1_1/page_1_1_1",
             "image_url": "../../resource/1.jpg",
             "title": "111111",
             "content": "11111有过装修经验的人，往往会说这样一句话：装修比买房还痛苦。这句话其实一点也不夸张，因为买房时，一般会初步确定一个大概位置，位置确定好之后，可选的余地也就不大了。但装"
